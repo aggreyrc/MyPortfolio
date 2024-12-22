@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="font-sans text-black-900 bg-gray-800 flex flex-col min-h-screen">
+    <div className="font-sans text-black-900 bg-custom-image bg-cover bg-center flex flex-col min-h-screen ">
       <Header />
       <Hero />
       <Projects />

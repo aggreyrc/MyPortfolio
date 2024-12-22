@@ -1,10 +1,10 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'custom-image': "url('./image/Backg.jpg')",
+        'custom-image': "url('/public/Backg.jpg')",
       }),
     },
   },

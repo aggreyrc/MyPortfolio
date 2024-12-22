@@ -34,12 +34,16 @@ const Projects = () => {
             <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-2">{project.name}</h3>
               <p className="mb-4">{project.description}</p>
+              <a href={project.project_link} target="_blank" rel="noopener noreferrer">
               <button className="px-6 py-2 bg-blue-500 hover:bg-blue-700 rounded">
                 View Project
               </button>
+              </a>
+              <a href={project.github_url} target="_blank" rel="noopener noreferrer">
               <button className="px-6 py-2 bg-blue-500 hover:bg-blue-700 rounded float-right">
                 Collaborate
               </button>
+              </a>
             </div>
           ))}
         </div>
