@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <h1>My Portfolio</h1>
-    </>
-  )
+    <div className="font-sans text-black-900 bg-gray-800 flex flex-col min-h-screen">
+      <Header />
+      <Hero />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
